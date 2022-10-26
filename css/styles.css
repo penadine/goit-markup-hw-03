@@ -41,6 +41,13 @@ h3 {
 
 .container {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Шапка сторінки */
@@ -49,8 +56,6 @@ h3 {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /* Навігація по сайту */
@@ -164,13 +169,6 @@ h3 {
 
 /* Наші переваги та вміння */
 
-.benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .benefit {
   line-height: 1.14;
   font-weight: 700;
@@ -193,8 +191,6 @@ h3 {
 
 .doing {
   padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .title-doing,
@@ -217,10 +213,6 @@ h3 {
 .team {
   background-color: #f5f4fa;
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .team-people {
@@ -255,8 +247,6 @@ h3 {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /* лого в підвалі */
@@ -294,9 +284,7 @@ h3 {
 /* Сторінка Портфоліо */
 
 .portfolio {
-  padding-bottom: 64px;
-  padding-left: 15px;
-  padding-right: 15px;
+  border-top: 1px solid #ececec;
 }
 
 /* Радіокнопки: Усі, Веб-сайти, Додатки, Дизайн, Маркентинг */
@@ -304,10 +292,7 @@ h3 {
 .rbutton {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
   padding-bottom: 56px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .rbutton .item + .item {
@@ -354,6 +339,10 @@ h3 {
 
 .work .item:nth-child(3n) {
   margin-right: 0;
+}
+
+.work .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .work-title {
