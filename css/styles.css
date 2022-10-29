@@ -39,8 +39,15 @@ h3 {
   color: var(--title-text-color);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -51,7 +58,7 @@ h3 {
 }
 
 /* Шапка сторінки */
-.header {
+.header .container {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -126,7 +133,7 @@ h3 {
 }
 
 /* Ефективні рішення для вашого бізнесу */
-.hero {
+.hero .container {
   background-color: #2f303a;
   text-align: center;
   padding-top: 200px;
@@ -149,22 +156,24 @@ h3 {
   font-family: Roboto, sans-serif;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: var(--accent-color);
-}
-
-.button:hover,
-.button:focus {
-  background: #188ce8;
-  border-color: #188ce8;
-}
-
-.button-name {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   display: flex;
   letter-spacing: 0.06em;
   color: #ffffff;
+  margin: 0 auto;
+  cursor: pointer;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.button:hover,
+.button:focus {
+  background: #188ce8;
+  border-color: #188ce8;
 }
 
 /* Наші переваги та вміння */
@@ -178,10 +187,11 @@ h3 {
 
 .benefits-item {
   display: flex;
-  justify-content: center;
+  margin-left: -30px;
 }
 
-.benefits-item .item + .item {
+.benefits-item > .item {
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
 
@@ -189,7 +199,7 @@ h3 {
   line-height: 1.71;
 }
 
-.doing {
+.doing .container {
   padding-bottom: 94px;
 }
 
@@ -203,14 +213,16 @@ h3 {
 
 .doing-images {
   display: flex;
+  margin-left: -30px;
 }
 
-.doing-images .item + .item {
+.doing-images .item {
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
 }
 
 /* Наша команда */
-.team {
+.team .container {
   background-color: #f5f4fa;
   text-align: center;
 }
@@ -218,13 +230,12 @@ h3 {
 .team-people {
   display: flex;
   justify-content: center;
+  margin-left: -30px;
 }
 
 .team-people .item {
   background-color: #ffffff;
-}
-
-.team-people .item + .item {
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
 
@@ -243,7 +254,7 @@ h3 {
 }
 
 /* Підвал сторінки */
-.footer {
+.footer .container {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -327,22 +338,24 @@ h3 {
 .work {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .work .item {
   margin-right: 30px;
   margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.work-content {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border: 1px;
   border-style: solid;
   border-color: #eeeeee;
-}
-
-.work .item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.work .item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 .work-title {
@@ -350,16 +363,10 @@ h3 {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
   margin-bottom: 4px;
 }
 
 .order-type {
   font-size: 16px;
   line-height: 1.88;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-bottom: 20px;
 }
