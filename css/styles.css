@@ -108,10 +108,10 @@ img {
 /* при наведенні */
 .navigation-link:hover,
 .navigation-link:focus,
-.mail:hover,
-.mail:focus,
-.tel:hover,
-.tel:focus {
+.mail-tel .mail:hover,
+.mail-tel .mail:focus,
+.mail-tel .tel:hover,
+.mail-tel .tel:focus {
   color: var(--accent-color);
 }
 
